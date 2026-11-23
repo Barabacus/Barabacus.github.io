@@ -1,106 +1,86 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07090d">
-  <meta name="description" content="Victoria Menshakova — artist and curator.">
-  <title>Victoria Menshakova — Index</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
-  <script defer src="main.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="Victoria Menshakova — artist and curator">
+<title>Victoria Menshakova — Personal Archive</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+<script defer src="main.js"></script>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <header class="topbar">
-    <a class="wordmark" href="#home">VM<span>®</span></a>
-    <div class="top-meta">INDEPENDENT ARTIST / CURATOR<br>MAGNITOGORSK — 2026</div>
-    <nav class="nav">
-      <a href="#works">WORKS <i>01</i></a>
-      <a href="#projects">PROJECTS <i>02</i></a>
-      <a href="#about">ABOUT <i>03</i></a>
-      <a href="#contact">CONTACT <i>04</i></a>
-    </nav>
-    <button class="sound" id="soundToggle" type="button" aria-pressed="false"><span class="sound-dot"></span><span id="soundLabel">SOUND OFF</span></button>
-  </header>
+<div class="grain"></div>
+<header class="header">
+  <a class="logo" href="#top">VM<span>·</span></a>
+  <div class="header-note">ARTIST / CURATOR<br>INDEPENDENT PRACTICE · 2020—26</div>
+  <nav><a href="#works">WORKS</a><a href="#projects">PROJECTS</a><a href="#about">INFO</a></nav>
+  <button class="sound" id="sound" aria-pressed="false"><span></span> SOUND OFF</button>
+</header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-grid"></div>
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> PERSONAL ARCHIVE / 2020—2026</p>
-        <h1>VICTORIA<br><span>MEN</span><span class="outline">SHAKOVA</span></h1>
-        <div class="hero-bottom">
-          <p class="intro">Artistic practice at the intersection<br>of image, perception and systems<br>of representation.</p>
-          <p class="coordinates">53°25′ N<br>58°58′ E</p>
-        </div>
-      </div>
-      <div class="orb-wrap" aria-label="Abstract interactive 3D object">
-        <div id="orb"></div>
-        <div class="orb-caption">OBJECT / 001<br>UNSTABLE FORM</div>
-      </div>
-      <div class="hero-index">FIG. 001 <span>—</span> OBSERVATION INTERFACE</div>
-      <a class="scroll-cue" href="#works">SCROLL TO EXPLORE <span>↓</span></a>
-    </section>
+<main id="top">
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-meta"><span>53°25′ N / 58°58′ E</span><span>PERSONAL ARCHIVE&nbsp;&nbsp; № 001</span></div>
+  <div class="hero-title">
+    <p class="kicker"><b></b> VICTORIA MENSHАKOVA — SELECTED WORKS & RESEARCH</p>
+    <h1>IMAGES<br><i>OF</i> <span>UNSEEN</span></h1>
+    <div class="hero-sub">
+      <p>Artistic practice concerned with<br>perception, representation and<br>the limits of the human.</p>
+      <a href="#works" class="discover">EXPLORE ARCHIVE <span>↘</span></a>
+    </div>
+  </div>
+  <div class="specimen" id="specimen">
+    <div class="specimen-ring ring-a"></div><div class="specimen-ring ring-b"></div>
+    <div class="specimen-core"></div>
+    <div class="specimen-label">FIG. 01<br>UNSTABLE BODY</div>
+  </div>
+  <div class="hero-bottom"><span>ART / RESEARCH / CURATORIAL PRACTICE</span><span>SCROLL TO CONTINUE ↓</span></div>
+</section>
 
-    <section class="statement section" id="about">
-      <div class="section-label">00 / POSITION</div>
-      <div class="statement-content">
-        <p class="big-statement reveal">What does it mean<br>to be <em>human</em> when<br>the systems of seeing<br>begin to define us?</p>
-        <div class="statement-foot">
-          <span>ARTIST STATEMENT / EXTRACT</span>
-          <p>My practice examines the boundaries of perception and the regimes through which information becomes visible, classified and understood.</p>
-        </div>
-      </div>
-    </section>
+<section class="intro section" id="about">
+  <div class="index-label">00 — POSITION</div>
+  <div class="intro-body">
+    <p class="statement">What does it mean<br>to be <em>human</em> when<br>the image becomes<br>an instrument?</p>
+    <div class="intro-detail"><span>ARTIST STATEMENT / EXTRACT</span><p>My practice examines how images, instruments and systems of classification shape the conditions through which the world becomes perceptible and knowable.</p></div>
+  </div>
+</section>
 
-    <section class="works section" id="works">
-      <div class="section-head">
-        <div class="section-label">01 / SELECTED WORKS</div>
-        <span class="micro">IMAGE INDEX — 2020—2026</span>
-      </div>
-      <div class="work-grid">
-        <a class="work-card large" href="#contact">
-          <div class="work-visual visual-one"><span class="crosshair">＋</span><span class="visual-code">A / 01</span></div>
-          <div class="work-info"><span>01 — ДОПУСК К СВЕТУ</span><span>2025—2026 / ENGRAVING</span></div>
-        </a>
-        <a class="work-card" href="#contact">
-          <div class="work-visual visual-two"><span class="visual-code">B / 02</span></div>
-          <div class="work-info"><span>02 — БЕЗ РЕФЕРЕНТА</span><span>2025 / DIGITAL IMAGE</span></div>
-        </a>
-        <a class="work-card" href="#contact">
-          <div class="work-visual visual-three"><span class="visual-code">C / 03</span></div>
-          <div class="work-info"><span>03 — BLUR</span><span>2024 / WATERCOLOUR</span></div>
-        </a>
-      </div>
-      <p class="coming">FULL ARCHIVE <span>IN DEVELOPMENT</span></p>
-    </section>
+<section class="works section" id="works">
+  <div class="section-top"><div class="index-label">01 — SELECTED WORKS</div><span>2020—2026 / ARCHIVE</span></div>
+  <div class="work-list">
+    <a class="work work-feature" href="#contact">
+      <div class="art art-glass"><div class="art-orbit"></div><span class="art-mark">01 / 12</span></div>
+      <div class="work-caption"><strong>Допуск к свету</strong><span>2025—2026&nbsp; / &nbsp;ENGRAVED GLASS</span></div>
+    </a>
+    <a class="work" href="#contact">
+      <div class="art art-model"><div class="model-shape"></div><span class="art-mark">02 / 12</span></div>
+      <div class="work-caption"><strong>Без референта</strong><span>2025&nbsp; / &nbsp;DIGITAL IMAGE</span></div>
+    </a>
+    <a class="work" href="#contact">
+      <div class="art art-blur"><div class="blur-shape"></div><span class="art-mark">03 / 12</span></div>
+      <div class="work-caption"><strong>Blur</strong><span>2024&nbsp; / &nbsp;WATERCOLOUR</span></div>
+    </a>
+  </div>
+  <div class="archive-note">THE ARCHIVE IS UNDER CONSTRUCTION <span>↗</span></div>
+</section>
 
-    <section class="projects section" id="projects">
-      <div class="section-head">
-        <div class="section-label">02 / PROJECTS</div>
-        <span class="micro">CURATORIAL & COLLABORATIVE PRACTICE</span>
-      </div>
-      <a class="project-row" href="#contact"><span>2026</span><strong>МЕЖА: ОПТИЧЕСКАЯ ИЗОЛЯЦИЯ</strong><span>CURATORIAL / ARTISTIC DUO</span><b>↗</b></a>
-      <a class="project-row" href="#contact"><span>2026</span><strong>СЛЕПОЕ ПОЛЕ</strong><span>EXHIBITION PROJECT</span><b>↗</b></a>
-      <a class="project-row" href="#contact"><span>2025</span><strong>ПОСРЕДНИКИ</strong><span>PUNCTUM / EXHIBITION</span><b>↗</b></a>
-    </section>
+<section class="projects section" id="projects">
+  <div class="section-top"><div class="index-label">02 — PROJECTS</div><span>CURATORIAL / COLLABORATIVE</span></div>
+  <a class="project" href="#contact"><span>2026</span><strong>МЕЖА: ОПТИЧЕСКАЯ ИЗОЛЯЦИЯ</strong><small>ME / ZHA — ARTISTIC DUO</small><b>↗</b></a>
+  <a class="project" href="#contact"><span>2026</span><strong>СЛЕПОЕ ПОЛЕ</strong><small>EXHIBITION PROJECT</small><b>↗</b></a>
+  <a class="project" href="#contact"><span>2025</span><strong>ПОСРЕДНИКИ</strong><small>PUNCTUM — EXHIBITION</small><b>↗</b></a>
+</section>
 
-    <section class="contact section" id="contact">
-      <div class="section-label">03 / CONTACT</div>
-      <div class="contact-main">
-        <p>OPEN TO<br><span>EXCHANGE.</span></p>
-        <a href="mailto:hello@example.com" class="contact-link">GET IN TOUCH ↗</a>
-      </div>
-      <div class="contact-foot"><span>VICTORIA MENSHakOVA / 2026</span><span>ARTIST — CURATOR</span><a href="#home">BACK TO TOP ↑</a></div>
-    </section>
-  </main>
-  <div class="page-transition" aria-hidden="true"></div>
-  <div class="cursor" id="cursor"></div>
+<section class="contact section" id="contact">
+  <div class="index-label">03 — CONTACT</div>
+  <div class="contact-title">LET'S KEEP<br><em>LOOKING.</em></div>
+  <div class="contact-row"><span>For exhibitions, collaborations<br>and research enquiries.</span><a href="mailto:YOUR-EMAIL@example.com">GET IN TOUCH ↗</a></div>
+  <footer><span>VICTORIA MENSHАKOVA © 2026</span><span>MAGNITOGORSK / RUSSIA</span><a href="#top">BACK TO TOP ↑</a></footer>
+</section>
+</main>
 </body>
 </html>
